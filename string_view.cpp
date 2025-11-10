@@ -2,6 +2,8 @@
 #include <string>
 #include <string_view>
 
+extern int string_viewTest();
+
 void f_ref(const std::string& s) // 단순히 상수 참조로 가져옴
 {
     std::cout << s << "\n";
@@ -30,3 +32,4 @@ int string_viewTest()
     //     bad = temp; // temp가 파괴된다면 Bad는 댕글링 상태가 됌
     // }
 }
+
